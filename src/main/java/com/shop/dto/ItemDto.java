@@ -1,14 +1,12 @@
 package com.shop.dto;
 
+import com.shop.entity.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.tomcat.jni.Local;
-
-import java.time.LocalDateTime;
 
 @Getter
 @Setter
-public class ItemDto {
+public class ItemDto extends BaseEntity {
 
     private Long id;
 
@@ -19,8 +17,4 @@ public class ItemDto {
     private String itemDetail;
 
     private String sellStatCd;
-
-    private LocalDateTime regTime;
-
-    private LocalDateTime updateTime;
 }
